@@ -5,7 +5,7 @@
         { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "public" } }
     ],
     "routes": [
-        { "handle": "filesystem" },
+        { "src": "/(.*\\.(?:css|js|mjs|json|ico|png|jpg|jpeg|gif|svg|webp|txt|webmanifest|woff|woff2|ttf|map))$", "dest": "/$1" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "env": {
