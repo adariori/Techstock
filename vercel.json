@@ -1,16 +1,16 @@
 {
     "version": 2,
     "builds": [
-        { "src": "/api/index.php", "use": "vercel-php@0.9.0" },
+        { "src": "/api/*.php", "use": "vercel-php@0.9.0" },
         { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "public" } }
     ],
     "routes": [
         { "src": "/(.*\\.(?:css|js|mjs|json|ico|png|jpg|jpeg|gif|svg|webp|txt|webmanifest|woff|woff2|ttf|map))$", "dest": "/$1" },
+        { "src": "/diag", "dest": "/api/diag.php" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
         "LOG_CHANNEL": "stderr",
         "CACHE_STORE": "array",
         "SESSION_DRIVER": "cookie",
