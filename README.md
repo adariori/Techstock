@@ -79,6 +79,10 @@ composer test
 | Catégories     | `/categories` (CRUD)                     |
 | Interventions  | `POST /devices/{device}/interventions`   |
 
+## Auteur
+
+ARIORI OLOROUNKO Adéliyi Odjouola Moshood — [GitHub](https://github.com/adariori) · [Portfolio](https://portefolio-nine-iota.vercel.app/)
+
 ## Licence
 
-Ce projet est un projet personnel basé sur le framework [Laravel](https://laravel.com), open-source sous licence [MIT](https://opensource.org/licenses/MIT).
+Ce projet est un projet académique sous licence [MIT](https://opensource.org/licenses/MIT), basé sur le framework [Laravel](https://laravel.com).
